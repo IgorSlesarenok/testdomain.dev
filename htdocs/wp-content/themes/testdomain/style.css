@@ -122,25 +122,8 @@ a.contactus-button:hover {
 }
 
 
-/* ------------- 2 ------------ */
+/* ------------- 3 ------------ */
 
-/* a. RTL support */
-@media screen and (min-width: 48em) {
-	
-.rtl .has-sidebar:not(.error404) #primary {
-    float: right;
-    width: 58%;
-}
-
-.rtl .has-sidebar #secondary {
-    float: left;
-    padding-top: 0;
-    width: 36%;
-}
-
-}
-
-.rtl .single-product .woocommerce-product-rating .star-rating {
-    float: right;
-    margin-left: .25em;
+form.cart {
+    margin-bottom: 10px;
 }
