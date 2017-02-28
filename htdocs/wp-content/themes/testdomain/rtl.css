@@ -1,0 +1,46 @@
+/*  RTL support */
+
+/*  a */
+@media screen and (min-width: 48em) {
+.has-sidebar:not(.error404) #primary {
+    float: right;
+    width: 58%;
+}
+
+.has-sidebar #secondary {
+    float: left;
+    padding-top: 0;
+    width: 36%;
+}
+}
+
+.single-product .woocommerce-product-rating .star-rating {
+    float: right;
+    margin-left: .25em;
+}
+
+.widget_product_search input[type=submit] {
+    position: absolute;
+    top: .5em;
+    left: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.widget_product_search .search-field {
+    padding-right: 10px;
+    padding-left: 90px;
+}
+
+.site-footer .widget .product_list_widget li a.remove, .widget .product_list_widget li a.remove {
+    float: left;
+}
+
+.woocommerce #content div.product div.thumbnails a, .woocommerce div.product div.thumbnails a, .woocommerce-page #content div.product div.thumbnails a, .woocommerce-page div.product div.thumbnails a {
+    float: right;
+}
+
+/* b */
+.product h3:after {
+    content: "\200E‎";
+}

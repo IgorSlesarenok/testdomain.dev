@@ -1,0 +1,146 @@
+/*
+Theme Name: testdomain.dev
+Template: twentyseventeen
+Theme URI: http://testdomain.dev/
+Author: testdomain.dev
+Description: Twenty Seventeen Child Theme.
+Version: 1.0
+*/
+@import url('../twentyseventeen/style.css');
+
+/* ------------- 1------------ */
+
+/*--------------------------------------------------------------
+Footer
+--------------------------------------------------------------*/
+
+.contactus-footer {
+	font-size: 14px;
+    font-size: 0.875rem;
+    margin-bottom: 1em;
+}
+
+.contactus-footer a {
+	color: #666;
+}
+.contactus-footer-title {
+	display:none;
+}
+
+a.contactus-button {
+	background-color: #222;
+    border: 0;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 800;
+    line-height: 1;
+    padding: 1em 2em;
+    text-shadow: none;
+    -webkit-transition: background 0.2s;
+    transition: background 0.2s;
+	margin-top: 0.3em;
+}
+a.contactus-button:hover {
+	background: #767676;
+}
+.mobile-button {
+    display: block !important;
+	text-align:center;
+}
+.contactus-footer-default {
+	display:none;
+}
+@media screen and (min-width: 48em){
+.contactus-footer {
+    float: right;
+    padding: 0.7em 0 0;
+    width: 20%;
+}
+.contactus-footer-mobile {
+	display:none;
+}	
+.contactus-footer-default {
+	display:block;
+}
+}
+
+
+/* The popup with any information */
+.modal-info {
+    margin-top: 10px;
+}
+
+#modal_form {
+	width: 300px; 
+	height: 300px; 
+	border-radius: 5px;
+	border: 3px #000 solid;
+	background: #fff;
+	position: fixed; 
+	top: 45%; 
+	left: 50%; 
+	margin-top: -150px;
+	margin-left: -150px;
+	display: none;
+	opacity: 0;
+	z-index: 5;
+	padding: 20px 10px;
+}
+
+#modal_form #modal_close {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    display: block;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+}
+
+#overlay {
+	z-index: 3;
+	position: fixed;
+	background-color: #000;
+	opacity: 0.8;
+	width: 100%; 
+	height: 100%; 
+	top: 0; 
+	left: 0;
+	cursor: pointer;
+	display: none; 
+}
+
+
+/* ------------- 2 ------------ */
+
+/* a. RTL support */
+@media screen and (min-width: 48em) {
+	
+.rtl .has-sidebar:not(.error404) #primary {
+    float: right;
+    width: 58%;
+}
+
+.rtl .has-sidebar #secondary {
+    float: left;
+    padding-top: 0;
+    width: 36%;
+}
+
+}
+
+.rtl .single-product .woocommerce-product-rating .star-rating {
+    float: right;
+    margin-left: .25em;
+}
